@@ -1,31 +1,31 @@
-# Eventer
+# <span style="background-color:powderblue;color:black;">**Eventer**
 
-Take your entertainment to the next level.
+___Take your entertainment to the next level.___
 
 ---
 
-## Project setup
-Following a list of useful **npm** commands for getting started with this project.
+### <span style="background-color:white;color:black;">Project setup
+Following a list of useful **npm** commands for getting started with this project:
 
-### Downloads project package and its dependencies
+- downloads project package and its dependencies:
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+- compiles and hot-reloads for development:
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+- compiles and minifies for production:
 ```
 npm run build
 ```
 
-### Lints and fixes files
+- lints and fixes files:
 ```
 npm run lint
 ```
 
-### Customize configuration
+- customize configuration:
 See [Configuration Reference](https://cli.vuejs.org/config/).
