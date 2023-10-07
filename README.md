@@ -1,6 +1,13 @@
-# new-project
+# Eventer
+
+Take your entertainment to the next level.
+
+---
 
 ## Project setup
+Following a list of useful **npm** commands for getting started with this project.
+
+### Downloads project package and its dependencies
 ```
 npm install
 ```
