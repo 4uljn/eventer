@@ -21,3 +21,9 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+# Ignore media files
+*.mp4
+# *.avi
+# *.avif
+# *.jpeg
