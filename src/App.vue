@@ -5,7 +5,7 @@
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container">
                     <a class="navbar-brand" href="#">
-                      <h1> EvenTO</h1>  
+                      <h1>Eventer</h1>  
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,6 +52,7 @@ export default {
 h1{
     font-size: 30px;
   font-family: Neuehaas;
+  text-transform: uppercase;
 }
 </style>
   

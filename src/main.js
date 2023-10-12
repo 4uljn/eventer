@@ -6,6 +6,7 @@ import VueSlider from 'vue-slider-component';
 import 'vue-slider-component/theme/default.css';
 import DatePicker from 'vue-datepicker'; // Importa vue-datepicker
 
+
 const app = createApp(App);
 
 app.use(store);

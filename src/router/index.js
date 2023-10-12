@@ -1,5 +1,7 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+
+import HomeView from '../views/HomeView.vue';
+import EventDetail from '../views/EventDetail.vue';
 
 const routes = [
   {
@@ -14,7 +16,14 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
-  }
+  },
+  {
+    path: '/event/:id',
+  name: 'event-detail',
+  component: EventDetail,
+  props: true,
+  
+  },
 ]
 
 const router = createRouter({
@@ -26,12 +35,10 @@ router.beforeEach((to, from, next) => {
   // Imposta il colore di sfondo del corpo in base alla rotta corrente
   if (to.name === 'home') {
     document.body.style.backgroundColor = '#F0F0F0'; // Colore di sfondo per la vista principale
-  } else if (to.name === 'about') {
+  } else  {
     document.body.style.backgroundColor = 'black'; // Colore di sfondo per la vista "About"
-  } else {
-    // Imposta un colore di sfondo predefinito per le altre rotte
-    document.body.style.backgroundColor = 'white';
-  }
+  } 
+  
   next();
 })
 
