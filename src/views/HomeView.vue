@@ -23,8 +23,24 @@
       </div>
     </div>
     <div class="row my-4">
+<<<<<<< HEAD
       <!--NON STA AL CENTRO-->
       <div class="col-sm-12 col-md-5 justify-content-center">
+=======
+      <div class="col">
+        <RelatedEventsCarousel></RelatedEventsCarousel>
+        <!--NON SI VEDE-->
+      </div>
+    </div>
+    <div class="row my-5">
+      <div class="col-sm-12 col-md-7">
+        <p>
+          Check out some of the most popular events coming up in your city, from
+          club nights and gigs to artist signings and comedy shows.
+        </p>
+      </div>
+      <div class="col-sm-12 col-md-5">
+>>>>>>> refs/remotes/origin/main
         <router-link :to="'/about/'">
           <button type="button" class="btn btn-dark rounded-pill">
             SEE MORE
@@ -127,7 +143,20 @@
   </div>
 </template>
 
+<<<<<<< HEAD
 <style scoped>
+=======
+<script>
+import RelatedEventsCarousel from "@/components/RelatedEventsCarousel.vue";
+export default {
+  components: {
+    RelatedEventsCarousel, // Registra il componente all'interno della vista
+  },
+};
+</script>
+
+<style>
+>>>>>>> refs/remotes/origin/main
 @media screen and (max-width: 768px) {
   #hometext {
     font-size: 3rem;
