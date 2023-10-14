@@ -1,6 +1,7 @@
 <template>
   <!-- Contenitore per le colonne -->
   <div class="container mt-4">
+<<<<<<< HEAD
     <div class="row mb-4">
       <div class="col-12 col-md-6">
         <p id="hometext">
@@ -98,43 +99,23 @@
           </div>
         </div>
       </div>
+=======
+      <div class="row">
+          <div class="col-md-6 align-self-end">
+>>>>>>> parent of ab7359d (Homepage)
 
-      <div class="col-sm-12 col-md-4">
-        <div class="row">
-          <div class="col-sm-6 col-md-12">
-            <img src="../assets/media/unlockingPotential.jpg" /><br />
+              <p id="hometext">Find more of <br>the events <br> you love</p>
           </div>
-          <div class="col-sm-6 col-md-12">
-            <h3>Unlocking potential for our employees</h3>
-            <br />
-            <p>
-              How we’re empowering our people through learning and development
-            </p>
-            <hr />
+          <div class="col-md-6">
+              <video src="../assets/media/videohome.mp4"></video>
           </div>
-        </div>
       </div>
-      <hr />
-      <div class="col-sm-12 col-md-4">
-        <div class="row">
-          <div class="col-sm-6 col-md-12">
-            <img src="../assets/media/newportJazz.jpg" /><br />
-          </div>
-          <div class="col-sm-6 col-md-12">
-            <h3>A new era for Newport Jazz and Folk festivals</h3>
-            <br />
-            <p>
-              Why the historic music festivals made the switch to digital
-              ticketing with DICE
-            </p>
-            <hr />
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
+
+  
 </template>
 
+<<<<<<< HEAD
 <style scoped>
 @media screen and (max-width: 768px) {
   #hometext {
@@ -158,40 +139,27 @@
     display: none;
   }
 }
+=======
+
+  
+
+<script>
+
+</script>
+
+
+
+
+
+  
+
+<style>
+>>>>>>> parent of ab7359d (Homepage)
 
 #hometext {
-  font-size: 4rem;
+  font-size: 60px;
   text-transform: uppercase;
   font-family: Neuehaas;
-}
-
-p {
-  font-size: 1.1rem;
-  font-weight: 600;
-}
-#testoCentro {
-  text-align: center;
-}
-
-/* css per dare la giusta altezza in relazione alla grandezza al video youtube 
-https://stackoverflow.com/questions/60164596/how-to-embed-youtube-iframe-video-100-full-width*/
-#videoWrapper {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
-  height: 0;
-  overflow: hidden;
-}
-
-#videoWrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-img {
-  max-width: 100%;
-  border-radius: 1%;
 }
 
 @font-face {
@@ -199,12 +167,9 @@ img {
   src: url(../assets/fonts/neue-haas-grotesk-display-pro-cufonfonts/NeueHaasDisplayBlack.ttf);
 }
 
-.videoYoutube {
-  border-radius: 1%;
-}
-
 video {
   max-width: 100%;
-  border-radius: 1%;
-}
-</style>
+}</style>
+
+
+
