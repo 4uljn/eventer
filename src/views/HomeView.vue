@@ -2,7 +2,7 @@
   <!-- Contenitore per le colonne -->
   <div class="container mt-4">
     <div class="row mb-4">
-      <div class="col-12 col-md-6 align-self-end">
+      <div class="col-12 col-md-6">
         <p id="hometext">
           Find more of <br />the events <br />
           you love
