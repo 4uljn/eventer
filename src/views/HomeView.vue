@@ -2,6 +2,7 @@
   <!-- Contenitore per le colonne -->
   <div class="container mt-4">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <div class="row mb-4">
       <div class="col-12 col-md-6">
         <p id="hometext">
@@ -103,6 +104,10 @@
       <div class="row">
           <div class="col-md-6 align-self-end">
 >>>>>>> parent of ab7359d (Homepage)
+=======
+      <div class="row">
+          <div class="col-md-6 align-self-end">
+>>>>>>> parent of ab7359d (Homepage)
 
               <p id="hometext">Find more of <br>the events <br> you love</p>
           </div>
@@ -115,6 +120,7 @@
   
 </template>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <style scoped>
 @media screen and (max-width: 768px) {
@@ -140,6 +146,8 @@
   }
 }
 =======
+=======
+>>>>>>> parent of ab7359d (Homepage)
 
   
 
@@ -154,6 +162,9 @@
   
 
 <style>
+<<<<<<< HEAD
+>>>>>>> parent of ab7359d (Homepage)
+=======
 >>>>>>> parent of ab7359d (Homepage)
 
 #hometext {
