@@ -1,8 +1,6 @@
 <template>
   <!-- Contenitore per le colonne -->
   <div class="container mt-4">
-<<<<<<< HEAD
-<<<<<<< HEAD
     <div class="row mb-4">
       <div class="col-12 col-md-6">
         <p id="hometext">
@@ -33,8 +31,7 @@
           club nights and gigs to artist signings and comedy shows.
         </p>
       </div>
-      <!--NON STA AL CENTRO-->
-      <div class="col-sm-12 col-md-5 justify-content-center">
+      <div class="col-sm-12 col-md-5">
         <router-link :to="'/about/'">
           <button type="button" class="btn btn-dark rounded-pill">
             SEE MORE
@@ -89,40 +86,58 @@
           <div class="col-sm-6 col-md-12">
             <img src="../assets/media/nextGeneration.jpg" /><br />
           </div>
+          <div class="col-md-6">
+            <video src="../assets/media/videohome.mp4"></video>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-4">
+        <div class="row">
           <div class="col-sm-6 col-md-12">
-            <h3>The next generation: work experience with ERIC</h3>
+            <img src="../assets/media/unlockingPotential.jpg" /><br />
+          </div>
+          <div class="col-sm-6 col-md-12">
+            <h3>Unlocking potential for our employees</h3>
             <br />
             <p>
-              What we learnt from our workshops and mentoring sessions in our
-              London office
+              How we’re empowering our people through learning and development
             </p>
             <hr />
           </div>
         </div>
       </div>
-=======
-      <div class="row">
-          <div class="col-md-6 align-self-end">
->>>>>>> parent of ab7359d (Homepage)
-=======
-      <div class="row">
-          <div class="col-md-6 align-self-end">
->>>>>>> parent of ab7359d (Homepage)
-
-              <p id="hometext">Find more of <br>the events <br> you love</p>
+      <hr />
+      <div class="col-sm-12 col-md-4">
+        <div class="row">
+          <div class="col-sm-6 col-md-12">
+            <img src="../assets/media/newportJazz.jpg" /><br />
           </div>
-          <div class="col-md-6">
-              <video src="../assets/media/videohome.mp4"></video>
+          <div class="col-sm-6 col-md-12">
+            <h3>A new era for Newport Jazz and Folk festivals</h3>
+            <br />
+            <p>
+              Why the historic music festivals made the switch to digital
+              ticketing with DICE
+            </p>
+            <hr />
           </div>
+        </div>
       </div>
+    </div>
   </div>
-
-  
 </template>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<style scoped>
+<script>
+import RelatedEventsCarousel from "@/components/RelatedEventsCarousel.vue";
+export default {
+  components: {
+    RelatedEventsCarousel, // Registra il componente all'interno della vista
+  },
+};
+</script>
+
+<style>
 @media screen and (max-width: 768px) {
   #hometext {
     font-size: 3rem;
@@ -145,27 +160,6 @@
     display: none;
   }
 }
-=======
-=======
->>>>>>> parent of ab7359d (Homepage)
-
-  
-
-<script>
-
-</script>
-
-
-
-
-
-  
-
-<style>
-<<<<<<< HEAD
->>>>>>> parent of ab7359d (Homepage)
-=======
->>>>>>> parent of ab7359d (Homepage)
 
 #hometext {
   font-size: 60px;
@@ -180,7 +174,5 @@
 
 video {
   max-width: 100%;
-}</style>
-
-
-
+}
+</style>
