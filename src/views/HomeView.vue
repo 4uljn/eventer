@@ -31,7 +31,8 @@
           club nights and gigs to artist signings and comedy shows.
         </p>
       </div>
-      <div class="col-sm-12 col-md-5">
+      <!--NON STA AL CENTRO-->
+      <div class="col-sm-12 col-md-5 justify-content-center">
         <router-link :to="'/about/'">
           <button type="button" class="btn btn-dark rounded-pill">
             SEE MORE
@@ -134,16 +135,7 @@
   </div>
 </template>
 
-<script>
-import RelatedEventsCarousel from "@/components/RelatedEventsCarousel.vue";
-export default {
-  components: {
-    RelatedEventsCarousel, // Registra il componente all'interno della vista
-  },
-};
-</script>
-
-<style>
+<style scoped>
 @media screen and (max-width: 768px) {
   #hometext {
     font-size: 3rem;

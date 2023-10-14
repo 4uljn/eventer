@@ -20,7 +20,7 @@ export default createStore({
           "Open Rhythm by CULT x Belli di Notte torna per l'ultima volta sul dancefloor dell'Ex Macello il 12/10/2023. 7 ore di musica tra dj set ed esibizioni live. ",
         age: "16+",
         presentedBy: "CULT",
-       disponibilita: 0,
+        disponibilita: 0,
       },
       {
         id: 2,
@@ -134,7 +134,7 @@ export default createStore({
           "Europe's leading Sneaker & Lifestyle Convention is coming to Milano! 14-15 OCT 2023 H.10/21 EAST END STUDIOS- MILAN Via Mecenate 88/A \n BAMBINI GRATIS FINO AI 12 ANNI CON DOCUMENTO DI IDENTITA' ACCESSO AGEVOLATO PER I DISABILI LIBERO ACCESSO AI CANI",
         age: "Tutte le età",
         presentedBy: "east market Milano",
-        disponibilita:0,
+        disponibilita: 0,
       },
       {
         id: 8,
@@ -151,8 +151,8 @@ export default createStore({
         age: "12",
         presentedBy: "east market Milano",
         description:
-        " questo ticket e' valido per il terzo giorno di evento: 19 ottobre dalle 10 alle 21",
-        disponibilita:1,
+          " questo ticket e' valido per il terzo giorno di evento: 19 ottobre dalle 10 alle 21",
+        disponibilita: 1,
       },
       {
         id: 9,
@@ -187,7 +187,7 @@ export default createStore({
         category: "dj",
         image: require("@/assets/media/nomore.avif"),
         age: "16",
-        disponbilita:3,
+        disponbilita: 3,
       },
 
       {
@@ -204,7 +204,7 @@ export default createStore({
         age: "17",
         category: "dj",
         image: require("@/assets/media/takeiteasy.avif"),
-        disponbilita:4,
+        disponbilita: 4,
       },
 
       {
@@ -240,9 +240,9 @@ export default createStore({
           day: "2-digit",
         }),
         category: "gigs",
-        age:"16",
+        age: "16",
         image: require("@/assets/media/arto.avif"),
-        disponbilita:0,
+        disponbilita: 0,
       },
 
       {
@@ -259,7 +259,7 @@ export default createStore({
         category: "gigs",
         age: "17",
         image: require("@/assets/media/babymetal.avif"),
-        disponibilita:1,
+        disponibilita: 1,
       },
       {
         id: 15,
@@ -274,7 +274,7 @@ export default createStore({
         category: "party",
         image: require("@/assets/media/fireworks.jpeg"),
         at: "Alexandra Palace",
-        disponbilita:3,
+        disponbilita: 3,
       },
       {
         id: 16,
@@ -289,7 +289,7 @@ export default createStore({
         category: "gigs",
         image: require("@/assets/media/campesinos.jpeg"),
         at: "Troxy",
-        disponbilita:4,
+        disponbilita: 4,
       },
       {
         id: 17,
@@ -304,7 +304,7 @@ export default createStore({
         category: "dj",
         image: require("@/assets/media/gauchoworld.jpeg"),
         at: "EartH",
-        disponbilita:5,
+        disponbilita: 5,
       },
       {
         id: 18,
@@ -319,7 +319,7 @@ export default createStore({
         category: "gigs",
         image: require("@/assets/media/masiwei.jpeg"),
         at: "Troxy",
-        disponbilita:0,
+        disponbilita: 0,
       },
       {
         id: 19,
@@ -334,7 +334,7 @@ export default createStore({
         category: "dj",
         image: require("@/assets/media/roast.jpeg"),
         at: "Electrowerkz",
-        disponbilita:1,
+        disponbilita: 1,
       },
       {
         id: 20,
@@ -349,7 +349,7 @@ export default createStore({
         category: "party",
         image: require("@/assets/media/halloween.jpeg"),
         at: "Fire & Lightbox",
-        disponbilita:2,
+        disponbilita: 2,
       },
       {
         id: 21,
@@ -364,7 +364,7 @@ export default createStore({
         category: "gigs",
         image: require("@/assets/media/yugyeom.jpeg"),
         at: "Troxy",
-        disponbilita:3,
+        disponbilita: 3,
       },
       {
         id: 22,
@@ -379,7 +379,7 @@ export default createStore({
         category: "gigs",
         image: require("@/assets/media/stone.jpeg"),
         at: "Roundhouse",
-        disponbilita:4,
+        disponbilita: 4,
       },
       {
         id: 23,
@@ -394,7 +394,7 @@ export default createStore({
         category: "gigs",
         image: require("@/assets/media/gruff.jpeg"),
         at: "Rough Trade East",
-        disponbilita:5,
+        disponbilita: 5,
       },
       {
         id: 24,
@@ -409,7 +409,7 @@ export default createStore({
         category: "gigs",
         image: require("@/assets/media/vaccines.jpeg"),
         at: "Rough Trade East",
-        disponbilita:0,
+        disponbilita: 0,
       },
       {
         id: 25,
@@ -424,7 +424,7 @@ export default createStore({
         category: "gigs",
         image: require("@/assets/media/dinner.jpeg"),
         at: "Roundhouse",
-        disponbilita:1,
+        disponbilita: 1,
       },
       {
         id: 26,
@@ -439,7 +439,7 @@ export default createStore({
         category: "dj",
         image: require("@/assets/media/trash.jpeg"),
         at: "Electrowerkz",
-        disponbilita:2,
+        disponbilita: 2,
       },
       {
         id: 27,
@@ -454,7 +454,7 @@ export default createStore({
         category: "party",
         image: require("@/assets/media/curtain.jpeg"),
         at: "Hootananny Brixton",
-        disponbilita:3,
+        disponbilita: 3,
       },
       {
         id: 28,
@@ -469,8 +469,8 @@ export default createStore({
         category: "party",
         image: require("@/assets/media/renaissance.jpeg"),
         at: "Venue MOT Unit 18",
-        disponbilita:4,
-      }, 
+        disponbilita: 4,
+      },
       {
         id: 29,
         name: "King Krule",
@@ -484,7 +484,7 @@ export default createStore({
         category: "gigs",
         image: require("@/assets/media/krule.jpeg"),
         at: "Eventim Apollo",
-        disponbilita:5,
+        disponbilita: 5,
       },
       {
         id: 30,
@@ -499,7 +499,7 @@ export default createStore({
         category: "gigs",
         image: require("@/assets/media/choirco.jpeg"),
         at: "EartH",
-        disponbilita:0,
+        disponbilita: 0,
       },
       {
         id: 31,
@@ -514,7 +514,7 @@ export default createStore({
         category: "gigs",
         image: require("@/assets/media/gaika.jpeg"),
         at: "Rough Trade East",
-        disponbilita:1,
+        disponbilita: 1,
       },
       {
         id: 32,
@@ -529,7 +529,7 @@ export default createStore({
         category: "dj",
         image: require("@/assets/media/elrow.jpeg"),
         at: "Factory Town",
-        disponbilita:2,
+        disponbilita: 2,
       },
       {
         id: 33,
@@ -544,7 +544,7 @@ export default createStore({
         category: "dj",
         image: require("@/assets/media/summit.jpeg"),
         at: "Club Space Miami",
-        disponbilita:3,
+        disponbilita: 3,
       },
       {
         id: 34,
@@ -559,7 +559,7 @@ export default createStore({
         category: "wellbeing",
         image: require("@/assets/media/yoga.jpeg"),
         at: "Club Space Miami",
-        disponbilita:4,
+        disponbilita: 4,
       },
       {
         id: 35,
@@ -574,7 +574,7 @@ export default createStore({
         category: "dj",
         image: require("@/assets/media/haai.jpeg"),
         at: "Club Space Miami",
-        disponbilita:5,
+        disponbilita: 5,
       },
       {
         id: 36,
@@ -589,7 +589,7 @@ export default createStore({
         category: "gigs",
         image: require("@/assets/media/italian.jpeg"),
         at: "Miami Beach Bandshell",
-        disponbilita:0,
+        disponbilita: 0,
       },
       {
         id: 37,
@@ -619,7 +619,7 @@ export default createStore({
         category: "gigs",
         image: require("@/assets/media/jam.jpeg"),
         at: "Miami Beach Bandshell",
-        disponbilita:2,
+        disponbilita: 2,
       },
       {
         id: 39,
@@ -634,7 +634,7 @@ export default createStore({
         category: "dj",
         image: require("@/assets/media/sam.jpeg"),
         at: "The Ground Miami",
-        disponbilita:3,
+        disponbilita: 3,
       },
       {
         id: 40,
@@ -649,7 +649,7 @@ export default createStore({
         category: "gigs",
         image: require("@/assets/media/kevin.jpeg"),
         at: "Miami Beach Bandshell",
-        disponbilita:4,
+        disponbilita: 4,
       },
       {
         id: 41,
@@ -664,7 +664,7 @@ export default createStore({
         category: "party",
         image: require("@/assets/media/cocodrills.jpeg"),
         at: "1800-Lucky",
-        disponbilita:5,
+        disponbilita: 5,
       },
 
       {
@@ -680,7 +680,7 @@ export default createStore({
         category: "party",
         image: require("@/assets/media/friends.jpeg"),
         at: "JuneShine Ranch",
-        disponbilita:0,
+        disponbilita: 0,
       },
       {
         id: 43,
@@ -695,7 +695,7 @@ export default createStore({
         category: "dj",
         image: require("@/assets/media/daisy.jpeg"),
         at: "WICKED WEST (open air)",
-        disponbilita:1,
+        disponbilita: 1,
       },
       {
         id: 44,
@@ -725,7 +725,7 @@ export default createStore({
         category: "gigs",
         image: require("@/assets/media/soda.jpeg"),
         at: "Soda Bar",
-        disponbilita:3,
+        disponbilita: 3,
       },
       {
         id: 46,
@@ -740,7 +740,7 @@ export default createStore({
         category: "gigs",
         image: require("@/assets/media/teenage.jpeg"),
         at: "Soda Bar",
-        disponbilita:4,
+        disponbilita: 4,
       },
       {
         id: 47,
@@ -755,7 +755,7 @@ export default createStore({
         category: "gigs",
         image: require("@/assets/media/luna.jpeg"),
         at: "Quartyard",
-        disponbilita:5,
+        disponbilita: 5,
       },
       {
         id: 48,
@@ -770,7 +770,7 @@ export default createStore({
         category: "gigs",
         image: require("@/assets/media/underscores.jpeg"),
         at: "Soda Bar",
-        disponbilita:0,
+        disponbilita: 0,
       },
       {
         id: 49,
@@ -845,7 +845,7 @@ export default createStore({
         category: "party",
         image: require("@/assets/media/pyramid.jpeg"),
         at: "Amnesia Ibiza",
-        disponbilita:4,
+        disponbilita: 4,
       },
       {
         id: 54,
@@ -860,7 +860,7 @@ export default createStore({
         category: "party",
         image: require("@/assets/media/amnesia.jpeg"),
         at: "Amnesia Ibiza",
-        disponbilita:3,
+        disponbilita: 3,
       },
       {
         id: 55,
@@ -890,7 +890,7 @@ export default createStore({
         category: "party",
         image: require("@/assets/media/kisstory.jpeg"),
         at: "O Beach Ibiza",
-        disponbilita:4,
+        disponbilita: 4,
       },
       {
         id: 57,
@@ -1010,7 +1010,7 @@ export default createStore({
         category: "gigs",
         image: require("@/assets/media/silence.jpeg"),
         at: "The Roxy",
-        disponibilita:4,
+        disponibilita: 4,
       },
       {
         id: 65,
@@ -1024,7 +1024,7 @@ export default createStore({
         category: "gigs",
         image: require("@/assets/media/superheaven.jpeg"),
         at: "The Roxy",
-        disponbilita:5,
+        disponbilita: 5,
       },
       {
         id: 66,
@@ -1039,7 +1039,7 @@ export default createStore({
         category: "party",
         image: require("@/assets/media/direction.jpeg"),
         at: "Mahall's",
-        disponbilita:0,
+        disponbilita: 0,
       },
       {
         id: 67,
@@ -1054,7 +1054,7 @@ export default createStore({
         category: "gigs",
         image: require("@/assets/media/meet.jpeg"),
         at: "Mahall's",
-        disponibilita:1,
+        disponibilita: 1,
       },
       {
         id: 68,
@@ -1069,7 +1069,7 @@ export default createStore({
         category: "gigs",
         image: require("@/assets/media/rider.jpeg"),
         at: "The Roxy",
-        disponibilita:2,
+        disponibilita: 2,
       },
       {
         id: 69,
@@ -1084,7 +1084,7 @@ export default createStore({
         category: "gigs",
         image: require("@/assets/media/citizen.jpeg"),
         at: "The Roxy",
-        disponbilita:3,
+        disponbilita: 3,
       },
       {
         id: 70,
@@ -1099,7 +1099,7 @@ export default createStore({
         category: "gigs",
         image: require("@/assets/media/scene.jpeg"),
         at: "The Roxy",
-        disponibilita:3,
+        disponibilita: 3,
       },
       {
         id: 71,
@@ -1114,7 +1114,7 @@ export default createStore({
         category: "gigs",
         image: require("@/assets/media/belmont.jpeg"),
         at: "Mahall's",
-        disponibilita:4,
+        disponibilita: 4,
       },
       {
         id: 72,
@@ -1129,7 +1129,7 @@ export default createStore({
         category: "dj",
         image: require("@/assets/media/eliza.jpeg"),
         at: "Centre Point",
-        disponibilita:5,
+        disponibilita: 5,
       },
       {
         id: 73,
@@ -1144,7 +1144,7 @@ export default createStore({
         category: "dj",
         image: require("@/assets/media/ben.jpeg"),
         at: "Centre Point",
-        disponibilita:0,
+        disponibilita: 0,
       },
       {
         id: 74,
@@ -1159,7 +1159,7 @@ export default createStore({
         category: "dj",
         image: require("@/assets/media/danilo.jpeg"),
         at: "Centre Point",
-        disponibilita:1,
+        disponibilita: 1,
       },
       {
         id: 75,
@@ -1174,7 +1174,7 @@ export default createStore({
         category: "gigs",
         image: require("@/assets/media/gorgon.jpeg"),
         at: "Centre Point",
-        disponibilita:2,
+        disponibilita: 2,
       },
       {
         id: 76,
@@ -1189,7 +1189,7 @@ export default createStore({
         category: "gigs",
         image: require("@/assets/media/dom.jpeg"),
         at: "Centre Point",
-        disponibilita:3,
+        disponibilita: 3,
       },
       {
         id: 77,
@@ -1204,7 +1204,7 @@ export default createStore({
         category: "dj",
         image: require("@/assets/media/avery.jpeg"),
         at: "Centre Point",
-        disponibilita:4,
+        disponibilita: 4,
       },
       {
         id: 78,
@@ -1219,7 +1219,7 @@ export default createStore({
         category: "gigs",
         image: require("@/assets/media/love.jpeg"),
         at: "Centre Point",
-        disponibilita:5,
+        disponibilita: 5,
       },
       {
         id: 79,
@@ -1234,7 +1234,7 @@ export default createStore({
         category: "gigs",
         image: require("@/assets/media/taylah.jpeg"),
         at: "Centre Point",
-        disponibilita:0,
+        disponibilita: 0,
       },
       {
         id: 80,
@@ -1249,7 +1249,7 @@ export default createStore({
         category: "gigs",
         image: require("@/assets/media/romare.jpeg"),
         at: "Centre Point",
-        disponibilita:1,
+        disponibilita: 1,
       },
       {
         id: 81,
@@ -1264,7 +1264,7 @@ export default createStore({
         category: "dj",
         image: require("@/assets/media/mano.jpeg"),
         at: "Centre Point",
-        disponibilita:2,
+        disponibilita: 2,
       },
 
       {
@@ -1279,9 +1279,9 @@ export default createStore({
           day: "2-digit",
         }),
         category: "party",
-        age:"18+",
+        age: "18+",
         image: require("@/assets/media/pure_halloween.avif"),
-        disponibilita:2,
+        disponibilita: 2,
       },
       {
         id: 83,
@@ -1289,7 +1289,7 @@ export default createStore({
         city: "Philadelphia",
         price: 26.28,
         at: "Ukie Club",
-        date: new Date("2023-12-10").toLocaleDateString("usa-USA",{
+        date: new Date("2023-12-10").toLocaleDateString("usa-USA", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -1297,14 +1297,14 @@ export default createStore({
         category: "gigs",
         age: "17",
         image: require("@/assets/media/pegboy.avif"),
-        disponibilita:3,
+        disponibilita: 3,
       },
       {
         id: 84,
         name: "Ucyll & RYO",
         city: "Lyon",
         price: 15.5,
-        date: new Date("2023-13-10").toLocaleDateString("fr-FR",{
+        date: new Date("2023-13-10").toLocaleDateString("fr-FR", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -1313,14 +1313,14 @@ export default createStore({
         at: "La Marquise",
         age: "16",
         image: require("@/assets/media/ucyll.jpeg"),
-        disponibilita:4,
+        disponibilita: 4,
       },
       {
         id: 85,
         name: "Mairo",
         city: "Lyon",
         price: 18.5,
-        date: new Date("2023-19-10").toLocaleDateString("fr-FR",{
+        date: new Date("2023-19-10").toLocaleDateString("fr-FR", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -1329,14 +1329,14 @@ export default createStore({
         at: "La Marquise",
         age: "15",
         image: require("@/assets/media/Mairo.jpeg"),
-        disponibilita:5,
+        disponibilita: 5,
       },
       {
         id: 86,
         name: "NNEKA",
         city: "Lyon",
         price: 28.5,
-        date: new Date("2023-20-10").toLocaleDateString("fr-FR",{
+        date: new Date("2023-20-10").toLocaleDateString("fr-FR", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -1345,14 +1345,14 @@ export default createStore({
         at: "Ninkasi Gerland",
         age: "18+",
         image: require("@/assets/media/nneka.jpeg"),
-        disponibilita:0,
+        disponibilita: 0,
       },
       {
         id: 87,
         name: "Dub Echo",
         city: "Lyon",
         price: 25.02,
-        date: new Date("2023-07-10").toLocaleDateString("fr-FR",{
+        date: new Date("2023-07-10").toLocaleDateString("fr-FR", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -1361,14 +1361,14 @@ export default createStore({
         at: "Transbordeur",
         age: "17",
         image: require("@/assets/media/echo.jpeg"),
-        disponibilita:1,
+        disponibilita: 1,
       },
       {
         id: 88,
         name: "Warum Meine Liebe",
         city: "Lyon",
         price: 29,
-        date: new Date("2023-11-11").toLocaleDateString("fr-FR",{
+        date: new Date("2023-11-11").toLocaleDateString("fr-FR", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -1377,14 +1377,14 @@ export default createStore({
         at: "Transbordeur",
         age: "18+",
         image: require("@/assets/media/warum.jpeg"),
-        disponibilita:2,
+        disponibilita: 2,
       },
       {
         id: 89,
         name: "La Bringue PINK PARTY",
         city: "Lyon",
         price: 13,
-        date: new Date("2023-12-10").toLocaleDateString("fr-FR",{
+        date: new Date("2023-12-10").toLocaleDateString("fr-FR", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -1393,14 +1393,14 @@ export default createStore({
         at: "Les salons du NH",
         age: "16",
         image: require("@/assets/media/pink_party.jpeg"),
-        disponibilita:3,
+        disponibilita: 3,
       },
       {
         id: 90,
         name: "EZ!",
         city: "Lyon",
         price: 13,
-        date: new Date("2023-20-10").toLocaleDateString("fr-FR",{
+        date: new Date("2023-20-10").toLocaleDateString("fr-FR", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -1409,7 +1409,7 @@ export default createStore({
         at: "Transbordeur",
         age: "18+",
         image: require("@/assets/media/ez.jpeg"),
-        disponbilita:4,
+        disponbilita: 4,
       },
 
       // Aggiungi altri eventi qui
