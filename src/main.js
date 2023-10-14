@@ -4,8 +4,8 @@ import router from './router';
 import store from './store';
 import VueSlider from 'vue-slider-component';
 import 'vue-slider-component/theme/default.css';
-import DatePicker from 'vue-datepicker'; // Importa vue-datepicker
-
+import VueDatePicker from '@vuepic/vue-datepicker';
+import '@vuepic/vue-datepicker/dist/main.css';
 
 const app = createApp(App);
 
@@ -14,6 +14,6 @@ app.use(router);
 
 // Registra il componente globalmente
 app.component('vue-slider', VueSlider);
-app.component('date-picker', DatePicker); // Registra anche il componente DatePicker
+app.component('VueDatePicker', VueDatePicker);
 
 app.mount('#app');
