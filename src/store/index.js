@@ -332,7 +332,7 @@ export default createStore({
           day: "2-digit",
         }),
         category: "dj",
-        image: require("@/assets/roast.jpeg"),
+        image: require("@/assets/media/roast.jpeg"),
         at: "Electrowerkz",
         disponbilita:1,
       },
