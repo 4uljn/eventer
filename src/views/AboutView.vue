@@ -14,7 +14,8 @@
           <VueDatePicker v-model="selectedDate" :enable-time-picker="false">
             <template #trigger>
               <button class="filter">
-                <span class="clickable-text" v-if="selectedDate">{{ formattedSelectedDate }} <i class="custom-close-icon" @click="clearDateFilter">x</i></span>
+                <span class="clickable-text" v-if="selectedDate">{{ formattedSelectedDate }} <i class="custom-close-icon"
+                    @click="clearDateFilter">x</i></span>
                 <span v-else>Data</span>
               </button>
             </template>
@@ -190,7 +191,6 @@ export default {
     };
   },
   computed: {
-    
     formattedSelectedDate() {
       if (this.selectedDate) {
         const date = new Date(this.selectedDate);
@@ -227,8 +227,8 @@ export default {
   },
   methods: {
     clearDateFilter() {
-    this.selectedDate = null; // Imposta selectedDate su null per rimuovere il filtro
-  },
+      this.selectedDate = null; // Imposta selectedDate su null per rimuovere il filtro
+    },
     togglePriceSlider() {
       this.isPriceSliderVisible = !this.isPriceSliderVisible; // Mostra/nascondi lo slider dei prezzi
     },
