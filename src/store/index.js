@@ -251,7 +251,7 @@ export default createStore({
         city: "Milano",
         price: 46,
         at: "Fabrique",
-        date: new Date("2023-10-19").toLocaleDateString("en-EN", {
+        date: new Date("2023-10-19").toLocaleDateString("it-IT", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -266,7 +266,7 @@ export default createStore({
         name: "Adult Fireworks Entry Tickets only",
         city: "London",
         price: 17,
-        date: new Date("2023-11-04").toLocaleDateString("en-EN", {
+        date: new Date("2023-11-04").toLocaleDateString("it-IT", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -281,7 +281,7 @@ export default createStore({
         name: "Los Campesinos!",
         city: "London",
         price: 9,
-        date: new Date("2024-02-17").toLocaleDateString("en-EN", {
+        date: new Date("2024-02-17").toLocaleDateString("it-IT", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -296,7 +296,7 @@ export default createStore({
         name: "Gauchoworld",
         city: "London",
         price: "Gratis",
-        date: new Date("2023-10-13").toLocaleDateString("en-EN", {
+        date: new Date("2023-10-13").toLocaleDateString("it-IT", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -311,7 +311,7 @@ export default createStore({
         name: "MASIWEI 2023 WORLD TOUR - The Grand Finale",
         city: "London",
         price: 87.3,
-        date: new Date("2023-10-22").toLocaleDateString("en-EN", {
+        date: new Date("2023-10-22").toLocaleDateString("it-IT", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -326,7 +326,7 @@ export default createStore({
         name: "ROAST",
         city: "London",
         price: 22,
-        date: new Date("2023-10-14").toLocaleDateString("en-EN", {
+        date: new Date("2023-10-14").toLocaleDateString("it-IT", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -341,7 +341,7 @@ export default createStore({
         name: "LICK HALLOWEEN LONDON",
         city: "London",
         price: 20,
-        date: new Date("2023-10-27").toLocaleDateString("en-EN", {
+        date: new Date("2023-10-27").toLocaleDateString("it-IT", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -356,7 +356,7 @@ export default createStore({
         name: "YUGYEOM",
         city: "London",
         price: 56.5,
-        date: new Date("2023-11-02").toLocaleDateString("en-EN", {
+        date: new Date("2023-11-02").toLocaleDateString("it-IT", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -371,7 +371,7 @@ export default createStore({
         name: "Stone Island Presents London",
         city: "London",
         price: "Gratis",
-        date: new Date("2023-10-12").toLocaleDateString("en-EN", {
+        date: new Date("2023-10-12").toLocaleDateString("it-IT", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -386,7 +386,7 @@ export default createStore({
         name: "Gruff Rhys: Live + Signing",
         city: "London",
         price: 14.44,
-        date: new Date("2024-01-29").toLocaleDateString("en-EN", {
+        date: new Date("2024-01-29").toLocaleDateString("it-IT", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -401,7 +401,7 @@ export default createStore({
         name: "The Vaccines: Live + Signing (3pm Doors)",
         city: "London",
         price: 15.54,
-        date: new Date("2024-01-14").toLocaleDateString("en-EN", {
+        date: new Date("2024-01-14").toLocaleDateString("it-IT", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -416,7 +416,7 @@ export default createStore({
         name: "The Last Dinner Party",
         city: "London",
         price: 30.09,
-        date: new Date("2024-02-01").toLocaleDateString("en-EN", {
+        date: new Date("2024-02-01").toLocaleDateString("it-IT", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -431,7 +431,7 @@ export default createStore({
         name: "House Of Trash - Ft. Luke Solomon",
         city: "London",
         price: 22,
-        date: new Date("2023-10-07").toLocaleDateString("en-EN", {
+        date: new Date("2023-10-07").toLocaleDateString("it-IT", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -446,7 +446,7 @@ export default createStore({
         name: "Swing & Bass: The Final Curtain",
         city: "London",
         price: 11.64,
-        date: new Date("2023-10-07").toLocaleDateString("en-EN", {
+        date: new Date("2023-10-07").toLocaleDateString("it-IT", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -461,7 +461,7 @@ export default createStore({
         name: "Club Renaissance: The Visuals Edition",
         city: "London",
         price: 11.64,
-        date: new Date("2023-11-11").toLocaleDateString("en-EN", {
+        date: new Date("2023-11-11").toLocaleDateString("it-IT", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -476,7 +476,7 @@ export default createStore({
         name: "King Krule",
         city: "London",
         price: 27.75,
-        date: new Date("2023-10-09").toLocaleDateString("en-EN", {
+        date: new Date("2023-10-09").toLocaleDateString("it-IT", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -491,7 +491,7 @@ export default createStore({
         name: "ChoirCo",
         city: "London",
         price: 17.85,
-        date: new Date("2023-12-09").toLocaleDateString("en-EN", {
+        date: new Date("2023-12-09").toLocaleDateString("it-IT", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -506,7 +506,7 @@ export default createStore({
         name: "GAIKA: Live + Signing",
         city: "London",
         price: "Gratis",
-        date: new Date("2023-11-16").toLocaleDateString("en-EN", {
+        date: new Date("2023-11-16").toLocaleDateString("it-IT", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -521,7 +521,7 @@ export default createStore({
         name: "elrow: Basel Week 2023",
         city: "Miami",
         price: 54.06,
-        date: new Date("2023-12-07").toLocaleDateString("usa-USA", {
+        date: new Date("2023-12-07").toLocaleDateString("it-IT", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -536,7 +536,7 @@ export default createStore({
         name: "John Summit & Fatboy Slim",
         city: "Miami",
         price: 75,
-        date: new Date("2023-12-06").toLocaleDateString("usa-USA", {
+        date: new Date("2023-12-06").toLocaleDateString("it-IT", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -551,7 +551,7 @@ export default createStore({
         name: "4:20 Space Yoga",
         city: "Miami",
         price: "Gratis",
-        date: new Date("2023-10-07").toLocaleDateString("usa-USA", {
+        date: new Date("2023-10-07").toLocaleDateString("it-IT", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -566,7 +566,7 @@ export default createStore({
         name: "Mochakk & HAAi",
         city: "Miami",
         price: 28.66,
-        date: new Date("2023-10-07").toLocaleDateString("usa-USA", {
+        date: new Date("2023-10-07").toLocaleDateString("it-IT", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -581,7 +581,7 @@ export default createStore({
         name: "Italian HIT Week",
         city: "Miami",
         price: "Gratis",
-        date: new Date("2023-10-14").toLocaleDateString("usa-USA", {
+        date: new Date("2023-10-14").toLocaleDateString("it-IT", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -596,7 +596,7 @@ export default createStore({
         name: "ACTION BRONSON PRESENTS: DR. BACHLAVA AND HUMAN GROWTH HORMONE",
         city: "Miami",
         price: 53.56,
-        date: new Date("2023-12-08").toLocaleDateString("usa-USA", {
+        date: new Date("2023-12-08").toLocaleDateString("it-IT", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -611,7 +611,7 @@ export default createStore({
         name: "Jam Cruise 20 Official Pre-Party ft. Karl Denson's Tiny Universe, Cool Cool Cool, DJ Logic & Electric Kif",
         city: "Miami",
         price: 48.41,
-        date: new Date("2024-02-24").toLocaleDateString("usa-USA", {
+        date: new Date("2024-02-24").toLocaleDateString("it-IT", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -626,7 +626,7 @@ export default createStore({
         name: "Sam Gellaitry",
         city: "Miami",
         price: 26.45,
-        date: new Date("2023-10-07").toLocaleDateString("usa-USA", {
+        date: new Date("2023-10-07").toLocaleDateString("it-IT", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -641,7 +641,7 @@ export default createStore({
         name: "Kevin Kaarl",
         city: "Miami",
         price: 41.2,
-        date: new Date("2023-10-12").toLocaleDateString("usa-USA", {
+        date: new Date("2023-10-12").toLocaleDateString("it-IT", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -656,7 +656,7 @@ export default createStore({
         name: "Sundays are Lucky with Cocodrills & Friends",
         city: "Miami",
         price: "Gratis",
-        date: new Date("2023-10-08").toLocaleDateString("usa-USA", {
+        date: new Date("2023-10-08").toLocaleDateString("it-IT", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -672,7 +672,7 @@ export default createStore({
         name: "Friends & Disco: Day Gala",
         city: "San Diego",
         price: "Gratis",
-        date: new Date("2023-10-21").toLocaleDateString("usa-USA", {
+        date: new Date("2023-10-21").toLocaleDateString("it-IT", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -687,7 +687,7 @@ export default createStore({
         name: "Daisy Chain #14 w/ Lab Group",
         city: "San Diego",
         price: 42.75,
-        date: new Date("2023-11-18").toLocaleDateString("usa-USA", {
+        date: new Date("2023-11-18").toLocaleDateString("it-IT", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -702,7 +702,7 @@ export default createStore({
         name: "Disclosure vs. Fred Again.. Tribute Dance Party",
         city: "San Diego",
         price: "Gratis",
-        date: new Date("2023-12-30").toLocaleDateString("usa-USA", {
+        date: new Date("2023-12-30").toLocaleDateString("it-IT", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -717,7 +717,7 @@ export default createStore({
         name: "Soda’s 15 Year Anniversary: Weatherbox, Positioner, Future Crooks",
         city: "San Diego",
         price: 12,
-        date: new Date("2023-11-11").toLocaleDateString("usa-USA", {
+        date: new Date("2023-11-11").toLocaleDateString("it-IT", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -732,7 +732,7 @@ export default createStore({
         name: "Teenage Wrist, Spiritual Cramp, Heavenward, Slow Joy",
         city: "San Diego",
         price: 27.81,
-        date: new Date("2023-10-07").toLocaleDateString("usa-USA", {
+        date: new Date("2023-10-07").toLocaleDateString("it-IT", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -747,7 +747,7 @@ export default createStore({
         name: "Luna Luna & Michael Seyer w/ Pincey",
         city: "San Diego",
         price: 25.75,
-        date: new Date("2023-10-12").toLocaleDateString("usa-USA", {
+        date: new Date("2023-10-12").toLocaleDateString("it-IT", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -762,7 +762,7 @@ export default createStore({
         name: "underscores w/ Jedwill",
         city: "San Diego",
         price: 22.15,
-        date: new Date("2023-10-28").toLocaleDateString("usa-USA", {
+        date: new Date("2023-10-28").toLocaleDateString("it-IT", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -777,7 +777,7 @@ export default createStore({
         name: "Claud",
         city: "San Diego",
         price: "Gratis",
-        date: new Date("2023-10-19").toLocaleDateString("usa-USA", {
+        date: new Date("2023-10-19").toLocaleDateString("it-IT", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -792,13 +792,13 @@ export default createStore({
         name: "Frankie and the Witch Fingers w/ Monsterwatch",
         city: "San Diego",
         price: 25.24,
-        date: new Date("2023-10-27").toLocaleDateString("usa-USA", {
+        date: new Date("2023-10-27").toLocaleDateString("it-IT", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
         }),
         category: "gigs",
-        image: require("@/assets/media/frrankie.jpeg"),
+        image: require("@/assets/media/frankie.jpeg"),
         at: "Quartyard",
         disponbilita: 2,
       },
@@ -807,13 +807,13 @@ export default createStore({
         name: "Christopher",
         city: "San Diego",
         price: 26.78,
-        date: new Date("2024-01-25").toLocaleDateString("usa-USA", {
+        date: new Date("2024-01-25").toLocaleDateString("it-IT", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
         }),
         category: "gigs",
-        image: require("@/assets/media/christtopher.jpeg"),
+        image: require("@/assets/media/christopher.jpeg"),
         at: "Soda Bar",
         disponbilita: 3,
       },
@@ -972,7 +972,7 @@ export default createStore({
         name: "TX2",
         city: "Cleveland",
         price: 21.63,
-        date: new Date("2023-11-05").toLocaleDateString("usa-USA", {
+        date: new Date("2023-11-05").toLocaleDateString("it-IT", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -987,7 +987,7 @@ export default createStore({
         name: "The Aces – I’ve Loved You For So Long World Tour",
         city: "Cleveland",
         price: 30.9,
-        date: new Date("2023-10-08").toLocaleDateString("usa-USA", {
+        date: new Date("2023-10-08").toLocaleDateString("it-IT", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -1002,7 +1002,7 @@ export default createStore({
         name: "SUICIDE SILENCE AND CHELSEA GRIN",
         city: "Cleveland",
         price: 31.93,
-        date: new Date("2023-10-20").toLocaleDateString("usa-USA", {
+        date: new Date("2023-10-20").toLocaleDateString("it-IT", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -1016,7 +1016,7 @@ export default createStore({
         id: 65,
         name: "Superheaven",
         city: "Cleveland",
-        date: new Date("2023-10-14").toLocaleDateString("usa-USA", {
+        date: new Date("2023-10-14").toLocaleDateString("it-IT", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -1031,7 +1031,7 @@ export default createStore({
         name: "One Direction vs. 5 Seconds of Summer dance party",
         city: "Cleveland",
         price: 26.78,
-        date: new Date("2023-10-07").toLocaleDateString("usa-USA", {
+        date: new Date("2023-10-07").toLocaleDateString("it-IT", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -1046,7 +1046,7 @@ export default createStore({
         name: "Meet Me @ The Altar: Say It To My Face Tour",
         city: "Cleveland",
         price: 32.96,
-        date: new Date("2023-11-01").toLocaleDateString("usa-USA", {
+        date: new Date("2023-11-01").toLocaleDateString("it-IT", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -1061,7 +1061,7 @@ export default createStore({
         name: "Night Rider",
         city: "Cleveland",
         price: 26.78,
-        date: new Date("2023-12-09").toLocaleDateString("usa-USA", {
+        date: new Date("2023-12-09").toLocaleDateString("it-IT", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -1076,7 +1076,7 @@ export default createStore({
         name: "Citizen",
         city: "Cleveland",
         price: 33.99,
-        date: new Date("2023-11-24").toLocaleDateString("usa-USA", {
+        date: new Date("2023-11-24").toLocaleDateString("it-IT", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -1091,7 +1091,7 @@ export default createStore({
         name: "Scene Queen",
         city: "Cleveland",
         price: 28.84,
-        date: new Date("2023-11-18").toLocaleDateString("usa-USA", {
+        date: new Date("2023-11-18").toLocaleDateString("it-IT", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -1106,7 +1106,7 @@ export default createStore({
         name: "Belmont and Can't Swim",
         city: "Cleveland",
         price: 26.78,
-        date: new Date("2023-10-22").toLocaleDateString("usa-USA", {
+        date: new Date("2023-10-22").toLocaleDateString("it-IT", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -1273,7 +1273,7 @@ export default createStore({
         city: "Philadelphia",
         price: 26.28,
         at: "TRANSCENDENTAL Secret Location",
-        date: new Date("2023-12-10").toLocaleDateString("usa-USA", {
+        date: new Date("2023-12-10").toLocaleDateString("it-IT", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -1289,7 +1289,7 @@ export default createStore({
         city: "Philadelphia",
         price: 26.28,
         at: "Ukie Club",
-        date: new Date("2023-12-10").toLocaleDateString("usa-USA", {
+        date: new Date("2023-12-10").toLocaleDateString("it-IT", {
           year: "numeric",
           month: "2-digit",
           day: "2-digit",
@@ -1414,19 +1414,30 @@ export default createStore({
 
       // Aggiungi altri eventi qui
     ],
-    // Carrello
+    cart: [],
     contatore: 0,
   },
-  // Mutations, actions e getters qui, se necessario
+
   mutations: {
-    AGGIUNGI: function (state) {
-      if (state.contatore < 3) {
-        state.contatore += 1;
+    addToCart(state, event) {
+      // Verifica se l'evento è già nel carrello
+      const existingEvent = state.cart.find((item) => item.id === event.id);
+      if (existingEvent) {
+        // Se esiste, aumenta il contatore per quell'evento
+        existingEvent.quantity++;
+      } else {
+        // Altrimenti, aggiungi l'evento al carrello con un contatore iniziale di 1
+        state.cart.push({ ...event, quantity: 1 });
       }
     },
-    TOGLI: function (state) {
-      if (state.contatore > 0) {
-        state.contatore -= 1;
+    removeOneFromCart(state, event) {
+      const existingEvent = state.cart.find((item) => item.id === event.id);
+      if (existingEvent) {
+        if (existingEvent.quantity > 1) {
+          existingEvent.quantity--;
+        } else {
+          state.cart = state.cart.filter((item) => item.id !== event.id);
+        }
       }
     },
   },

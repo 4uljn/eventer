@@ -1,0 +1,18 @@
+<template>
+    <div class="container mt-4">
+      <h1>Carrello</h1>
+      
+    </div>
+  </template>
+<script>
+export default {
+  
+  methods: {
+    confermaAcquisto() {
+      // Aggiungi la logica per confermare l'acquisto qui
+      // Ad esempio, puoi mostrare un messaggio di conferma o aggiornare uno stato nel tuo store.
+    },
+  },
+};
+</script>
+  

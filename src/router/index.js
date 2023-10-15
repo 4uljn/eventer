@@ -2,7 +2,7 @@ import { createRouter, createWebHashHistory } from "vue-router";
 
 import HomeView from "../views/HomeView.vue";
 import EventDetail from "../views/EventDetail.vue";
-import loginView from "../views/loginView.vue";
+import CartView from "../views/CartView.vue";
 
 const routes = [
   {
@@ -26,9 +26,10 @@ const routes = [
     props: true,
   },
   {
-    path: "/login",
-    name: "login",
-    component: loginView,
+    path: "/cart",
+    name: "cart",
+    component: CartView,
+    props: true,
   },
 ];
 
@@ -41,7 +42,7 @@ router.beforeEach((to, from, next) => {
   // Imposta il colore di sfondo del corpo in base alla rotta corrente
   if (to.name === "home") {
     document.body.style.backgroundColor = "#F0F0F0"; // Colore di sfondo per la vista principale
-  } else {
+  } else if (to.name === "about") {
     document.body.style.backgroundColor = "black"; // Colore di sfondo per la vista "About"
   }
 

@@ -19,8 +19,15 @@
           </p>
         </div>
         <div class="jumbotron">
-          <h3>Prezzo:</h3>
-          <p>{{ event.price }}</p>
+          <div>
+            <h3>Prezzo:</h3>
+            <p>{{ event.price }}</p>
+          </div>
+          <div class="addToCartContainer">
+            <button id="addToCartButton" @click="addToCartAndRedirect">
+              Aggiungi al Carrello
+            </button>
+          </div>
         </div>
         <div class="mb-3">
           <label for="description"> About</label>
@@ -66,7 +73,7 @@
 </template>
 
 <script>
-import { mapState } from "vuex";
+import { mapState, mapMutations } from "vuex";
 
 export default {
   computed: {
@@ -104,6 +111,18 @@ export default {
       });
     },
   },
+  methods: {
+    ...mapMutations(["addToCart"]),
+
+    addToCartAndRedirect() {
+      // Esegui la mutazione per aggiungere l'evento al carrello
+      this.addToCart(this.event);
+
+      // Effettua il reindirizzamento alla vista del carrello
+      this.$router.push("/cart");
+    },
+    // ... Il resto del tuo codice ...
+  },
 };
 </script>
 
@@ -112,6 +131,7 @@ export default {
   position: sticky;
   top: 20px;
 }
+
 .rounded-image {
   border-radius: 10%;
   max-width: 100%;
@@ -125,17 +145,34 @@ export default {
 .container {
   color: white;
 }
+
 .jumbotron {
   background-color: rgb(52, 48, 48);
+  display: flex;
 }
+
 .custom-hr {
   background-color: white /* Imposta il tuo colore desiderato */;
 }
+
 .carousel-inner .carousel-item {
   display: flex;
 }
+
 .carousel-inner .carousel-item .row {
   flex: 1;
-  margin-right: 10px; /* Imposta il margine desiderato tra le immagini */
+  margin-right: 10px;
+  /* Imposta il margine desiderato tra le immagini */
+}
+
+.addToCartContainer {
+  margin-left: 30%;
+}
+
+#addToCartButton {
+  border: 1px solid yellow;
+  border-radius: 10px;
+  background-color: yellow;
+  padding: 2%;
 }
 </style>
