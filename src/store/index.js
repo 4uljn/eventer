@@ -108,7 +108,7 @@ export default createStore({
       },
       {
         id: 6,
-        name: "Pierluca Mariti (Piuttosto_Che) presenta “Niente di che”",
+        name: "Pierluca Mariti (Piuttosto_Che) presenta “Niente di che",
         city: "Milano",
         price: 26.28,
         at: "ARCA",
@@ -120,7 +120,7 @@ export default createStore({
         category: "Artist Signing",
         image: require("@/assets/media/piuttosto_che.jpeg"),
         description:
-          '24/10 - Prima Data di Milano del Tour di Presentazione di "Niente di che" il nuovo romanzo di Pierluca Mariti (PIUTTOSTO_CHE). \n 18.30 Apertura \n 19.30 Presentazione + Firmacopie',
+          "24/10 - Prima Data di Milano del Tour di Presentazione di 'Niente di che' il nuovo romanzo di Pierluca Mariti (PIUTTOSTO_CHE). \n 18.30 Apertura \n 19.30 Presentazione + Firmacopie",
         further_details:
           "Prima e dopo lo Spettacolo presso il Bar / Bistrot di Arca Milano sarà possibile mangiare e bere qualcosa nell'attesa oppure rilassarsi per quattro chiacchere dopo la presentazione.",
         age: "Tutte le età",
