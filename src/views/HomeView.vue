@@ -1,11 +1,15 @@
 <template>
   <!-- Contenitore per le colonne -->
   <div class="container mt-4">
-    <div class="row">
-      <div class="col-md-6 align-self-end">
+    <div class="row mb-4">
+      <div class="col-12 col-md-6 align-self-end">
         <p id="hometext">
           Find more of <br />the events <br />
           you love
+        </p>
+        <p>
+          Incredible live shows. Upfront pricing. Relevant recommendations.
+          <br />We make going out easy.
         </p>
       </div>
       <div class="col-12 col-md-6">
@@ -15,6 +19,18 @@
       </div>
     </div>
     <div class="row my-4">
+      <div class="col">
+        <RelatedEventsCarousel></RelatedEventsCarousel>
+        <!--NON SI VEDE-->
+      </div>
+    </div>
+    <div class="row my-5">
+      <div class="col-sm-12 col-md-7">
+        <p>
+          Check out some of the most popular events coming up in your city, from
+          club nights and gigs to artist signings and comedy shows.
+        </p>
+      </div>
       <!--NON STA AL CENTRO-->
       <div class="col-sm-12 col-md-5 justify-content-center">
         <router-link :to="'/about/'">
@@ -149,12 +165,46 @@
   font-family: Neuehaas;
 }
 
+p {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+#testoCentro {
+  text-align: center;
+}
+
+/* css per dare la giusta altezza in relazione alla grandezza al video youtube 
+https://stackoverflow.com/questions/60164596/how-to-embed-youtube-iframe-video-100-full-width*/
+#videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+}
+
+#videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+img {
+  max-width: 100%;
+  border-radius: 1%;
+}
+
 @font-face {
   font-family: Neuehaas;
   src: url(../assets/fonts/neue-haas-grotesk-display-pro-cufonfonts/NeueHaasDisplayBlack.ttf);
 }
 
+.videoYoutube {
+  border-radius: 1%;
+}
+
 video {
   max-width: 100%;
+  border-radius: 1%;
 }
 </style>
