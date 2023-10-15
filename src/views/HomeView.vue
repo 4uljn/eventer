@@ -18,12 +18,7 @@
         </video>
       </div>
     </div>
-    <div class="row my-4">
-      <div class="col">
-        <RelatedEventsCarousel></RelatedEventsCarousel>
-        <!--NON SI VEDE-->
-      </div>
-    </div>
+
     <div class="row my-5">
       <div class="col-sm-12 col-md-7">
         <p>
@@ -32,7 +27,7 @@
         </p>
       </div>
       <!--NON STA AL CENTRO-->
-      <div class="col-sm-12 col-md-5 justify-content-center">
+      <div class="col-sm-12 col-md-5 bottoneCentrale">
         <router-link :to="'/about/'">
           <button type="button" class="btn btn-dark rounded-pill">
             SEE MORE
@@ -192,6 +187,11 @@ https://stackoverflow.com/questions/60164596/how-to-embed-youtube-iframe-video-1
 img {
   max-width: 100%;
   border-radius: 1%;
+}
+.bottoneCentrale {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @font-face {

@@ -44,14 +44,19 @@
       <!-- Questo è dove vengono visualizzate le viste/router -->
     </div>
   </div>
+  <footerComponent></footerComponent>
 </template>
 
 <script>
 import { RouterLink } from "vue-router";
+import footerComponent from "@/components/footerComponent.vue";
 
 export default {
   name: "App",
-  components: { RouterLink },
+  components: {
+    RouterLink,
+    footerComponent,
+  },
 };
 </script>
 

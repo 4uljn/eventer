@@ -1,6 +1,6 @@
 <template>
   <div class="container mt-4">
-    <div class="row my-5">
+    <div class="row my-5 justify-content-center">
       <div class="col-12">
         <p id="hometext">Accedi / Registrati</p>
         <p>
@@ -9,55 +9,67 @@
         </p>
       </div>
     </div>
-    <div class="row mt-5 mb-2 justify-content-center">
-      <div class="col-md-4 mb-3">
-        <input
-          required
-          type="email"
-          id="email"
-          class="form-control"
-          placeholder="Inserisci la tua email: name@gmail.com"
-        />
-      </div>
-    </div>
     <div class="row justify-content-center">
-      <div class="col-md-4 mb-3">
-        <input
-          required
-          type="text"
-          id="nome"
-          class="form-control"
-          placeholder="Inserisci il tuo nome"
-        />
-      </div>
-    </div>
-    <div class="row my-2 justify-content-center">
-      <div class="col-md-4 mb-3">
-        <input
-          required
-          type="password"
-          id="password"
-          class="form-control"
-          placeholder="Inserisci la password"
-        />
-      </div>
-    </div>
+      <div class="col-6">
+        <form @submit.prevent="onSubmit">
+          <div class="my-3">
+            <input
+              required
+              type="email"
+              class="form-control"
+              v-model="email"
+              placeholder="Inserisci la tua email: name@gmail.com"
+            />
+          </div>
 
-    <div class="row my-3">
-      <div class="col-12">
-        <p>
-          Registrandoti accetti i nostri <br />Terms of Use e Privacy Policy
-        </p>
-      </div>
-    </div>
-    <div class="row my-5 justify-content-center">
-      <!--NON STA AL CENTRO-->
-      <div class="col-12">
-        <button type="button" class="btn btn-dark rounded-pill">Avanti</button>
+          <div class="my-3">
+            <input
+              required
+              type="text"
+              class="form-control"
+              v-model="nome"
+              placeholder="Inserisci il tuo nome"
+            />
+          </div>
+          <div class="my-3">
+            <input
+              required
+              type="password"
+              class="form-control"
+              v-model="password"
+              placeholder="Inserisci la password"
+            />
+          </div>
+
+          <div>
+            <p id="privacyPolicy">
+              Registrandoti accetti i nostri <br />Terms of Use e Privacy Policy
+            </p>
+          </div>
+          <div class="mb-5 bottoneCentrale">
+            <!--NON STA AL CENTRO-->
+
+            <button type="submit" class="btn btn-dark rounded-pill">
+              Avanti
+            </button>
+          </div>
+        </form>
       </div>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  data: function () {
+    return {
+      email: null,
+      nome: null,
+      password: null,
+    };
+  },
+};
+</script>
 
 <style scoped>
 #hometext {
@@ -76,6 +88,10 @@ p {
   justify-self: center;
   text-align: center;
 }
+#privacyPolicy {
+  font-size: 1rem;
+  font-weight: 300;
+}
 
 .container {
   color: white;
@@ -85,5 +101,10 @@ p {
 }
 .custom-hr {
   background-color: white /* Imposta il tuo colore desiderato */;
+}
+.bottoneCentrale {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>

@@ -3,6 +3,8 @@ import { createRouter, createWebHashHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import EventDetail from "../views/EventDetail.vue";
 import CartView from "../views/CartView.vue";
+import loginView from "../views/loginView.vue";
+import pageNotFound from "../views/pageNotFound.vue";
 
 const routes = [
   {
@@ -31,6 +33,17 @@ const routes = [
     component: CartView,
     props: true,
   },
+  {
+    path: "/login",
+    name: "login",
+    component: loginView,
+    props: true,
+  },
+  {
+    path: "/:catchall(.*)",
+    name: "NotFound",
+    component: pageNotFound,
+  },
 ];
 
 const router = createRouter({
@@ -42,7 +55,7 @@ router.beforeEach((to, from, next) => {
   // Imposta il colore di sfondo del corpo in base alla rotta corrente
   if (to.name === "home") {
     document.body.style.backgroundColor = "#F0F0F0"; // Colore di sfondo per la vista principale
-  } else if (to.name === "about") {
+  } else {
     document.body.style.backgroundColor = "black"; // Colore di sfondo per la vista "About"
   }
 
