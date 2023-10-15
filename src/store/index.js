@@ -81,7 +81,7 @@ export default createStore({
           "Siamo orgogliosi di presentare in esclusiva nazionale lo show di uno degli artisiti più famosi del pianeta, Purple Disco Machine che ha raggiunto il successo nel 2020 grazie al singolo Hypnotized prodotto in collaborazione con il gruppo Sophie and the Giants e divenuto uno dei tormentoni dell'estate.",
         further_details:
         "questo biglietto è riservato per il primo giorno di evento", 
-          age: "Questo è un evento 18+",
+          age: "18+",
         disponbilita: 3,
         presentedBy: "Tino Piontek",
       },
