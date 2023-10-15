@@ -14,46 +14,60 @@
 
         <div class="mb-3">
           <p class="date">{{ event.date }}</p>
-          <p> <span> {{ event.city }}</span> <span> {{ event.category }}</span></p>
+          <p>
+            <span> {{ event.city }}</span> <span> {{ event.category }}</span>
+          </p>
         </div>
         <div class="jumbotron">
           <div>
             <h3>Prezzo:</h3>
-          <p>{{ event.price }}</p> 
+            <p>{{ event.price }}</p>
           </div>
-         <div class="addToCartContainer">
-          <button id="addToCartButton" @click="addToCartAndRedirect">Aggiungi al Carrello</button>
-         </div>
-          
+          <div class="addToCartContainer">
+            <button id="addToCartButton" @click="addToCartAndRedirect">
+              Aggiungi al Carrello
+            </button>
+          </div>
         </div>
         <div class="mb-3">
           <label for="description"> About</label>
           <p>{{ event.description }}</p>
-          <p> Questo è un evento {{ event.age }}</p>
-          <p> Presentato da {{ event.presentedBy }}</p>
+          <p>Questo è un evento {{ event.age }}</p>
+          <p>Presentato da {{ event.presentedBy }}</p>
         </div>
-        <hr class="hr custom-hr">
+        <hr class="hr custom-hr" />
         <div>
-          <h4> Venue</h4>
-          <p> {{ event.at }}</p>
+          <h4>Venue</h4>
+          <p>{{ event.at }}</p>
         </div>
-        <hr class="hr custom-hr">
+        <hr class="hr custom-hr" />
       </div>
     </div>
-    <p> Eventi Correlati</p>
-    <div id="relatedEventsCarousel" class="carousel slide mt-4" data-ride="carousel">
+    <p>Eventi Correlati</p>
+    <div
+      id="relatedEventsCarousel"
+      class="carousel slide mt-4"
+      data-ride="carousel"
+    >
       <div class="carousel-inner">
-        <div v-for="(group, index) in imageGroups" :key="index" :class="{ 'carousel-item': index === 0 }">
+        <div
+          v-for="(group, index) in imageGroups"
+          :key="index"
+          :class="{ 'carousel-item': index === 0 }"
+        >
           <div class="row">
             <div class="col-2" v-for="image in group" :key="image.id">
               <router-link :to="'/event/' + image.id">
-                <img :src="image.image" class="d-block w-100 img-thumbnail" :alt="image.alt" />
+                <img
+                  :src="image.image"
+                  class="d-block w-100 img-thumbnail"
+                  :alt="image.alt"
+                />
               </router-link>
             </div>
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </template>
@@ -89,9 +103,12 @@ export default {
     relatedEvents() {
       // Filtra gli eventi correlati in base alla stessa città e categoria
       return this.events.filter((event) => {
-        return event.city === this.event.city && event.category === this.event.category && event.id !== this.event.id;
+        return (
+          event.city === this.event.city &&
+          event.category === this.event.category &&
+          event.id !== this.event.id
+        );
       });
-
     },
   },
   methods: {
@@ -103,7 +120,6 @@ export default {
 
       // Effettua il reindirizzamento alla vista del carrello
       this.$router.push("/cart");
-
     },
     // ... Il resto del tuo codice ...
   },
@@ -136,10 +152,7 @@ export default {
 }
 
 .custom-hr {
-  background-color: white
-    /* Imposta il tuo colore desiderato */
-  ;
-
+  background-color: white /* Imposta il tuo colore desiderato */;
 }
 
 .carousel-inner .carousel-item {
@@ -152,16 +165,14 @@ export default {
   /* Imposta il margine desiderato tra le immagini */
 }
 
-.addToCartContainer{
+.addToCartContainer {
   margin-left: 30%;
 }
 
-#addToCartButton{
+#addToCartButton {
   border: 1px solid yellow;
   border-radius: 10px;
   background-color: yellow;
   padding: 2%;
 }
 </style>
-
-

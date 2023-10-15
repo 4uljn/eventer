@@ -19,6 +19,18 @@
       </div>
     </div>
     <div class="row my-4">
+      <div class="col">
+        <RelatedEventsCarousel></RelatedEventsCarousel>
+        <!--NON SI VEDE-->
+      </div>
+    </div>
+    <div class="row my-5">
+      <div class="col-sm-12 col-md-7">
+        <p>
+          Check out some of the most popular events coming up in your city, from
+          club nights and gigs to artist signings and comedy shows.
+        </p>
+      </div>
       <!--NON STA AL CENTRO-->
       <div class="col-sm-12 col-md-5 justify-content-center">
         <router-link :to="'/about/'">
