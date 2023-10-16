@@ -1,6 +1,6 @@
 <template>
   <!-- Contenitore per le colonne -->
-  <div class="container mt-4">
+  <div class="container my-4">
     <div class="row mb-4">
       <div class="col-12 col-md-6 align-self-end">
         <p id="hometext">

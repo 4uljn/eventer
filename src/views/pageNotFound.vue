@@ -1,9 +1,9 @@
 <template id="sfondo">
   <div class="row justify-content-center">
-    <div class="col-12 my-5"></div>
+    <div class="col-12 my-5 py-5"></div>
     <p id="hometext">Page not found</p>
   </div>
-  <div class="row my-5 justify-content-center">
+  <div class="row my-5 py-5 justify-content-center">
     <!--NON STA AL CENTRO LO TOLGO?-->
     <div class="col-12 bottoneCentrale">
       <router-link :to="'/about/'">

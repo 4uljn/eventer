@@ -96,12 +96,7 @@ p {
 .container {
   color: white;
 }
-.jumbotron {
-  background-color: rgb(52, 48, 48);
-}
-.custom-hr {
-  background-color: white /* Imposta il tuo colore desiderato */;
-}
+
 .bottoneCentrale {
   display: flex;
   justify-content: center;
