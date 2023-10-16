@@ -129,7 +129,7 @@ export default {
 <style scoped>
 .sticky {
   position: sticky;
-  top: 20px;
+  top: 1.2rem;
 }
 
 .rounded-image {
@@ -161,7 +161,7 @@ export default {
 
 .carousel-inner .carousel-item .row {
   flex: 1;
-  margin-right: 10px;
+  margin-right: 0.6rem;
   /* Imposta il margine desiderato tra le immagini */
 }
 
@@ -171,7 +171,7 @@ export default {
 
 #addToCartButton {
   border: 1px solid yellow;
-  border-radius: 10px;
+  border-radius: 10%;
   background-color: yellow;
   padding: 2%;
 }

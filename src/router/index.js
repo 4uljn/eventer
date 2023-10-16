@@ -5,6 +5,7 @@ import EventDetail from "../views/EventDetail.vue";
 import CartView from "../views/CartView.vue";
 import loginView from "../views/loginView.vue";
 import pageNotFound from "../views/pageNotFound.vue";
+import ChiSiamo from "../views/ChiSiamo.vue";
 
 const routes = [
   {
@@ -37,6 +38,12 @@ const routes = [
     path: "/login",
     name: "login",
     component: loginView,
+    props: true,
+  },
+  {
+    path: "/chiSiamo",
+    name: "ChiSiamo",
+    component: ChiSiamo.vue,
     props: true,
   },
   {

@@ -21,13 +21,16 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <router-link to="/about" class="nav-link">About</router-link>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link ml-2" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link ml-2" href="#">Services</a>
+                <router-link to="/about" class="nav-link">Eventi</router-link>
+              </li>
+
+              <li class="nav-item">
+                <router-link to="/chiSiamo" class="nav-link"
+                  >Chi siamo</router-link
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link ml-2" href="#">Contact</a>
@@ -62,7 +65,7 @@ export default {
 
 <style>
 h1 {
-  font-size: 30px;
+  font-size: 1.9rem;
   font-family: Neuehaas;
   text-transform: uppercase;
 }
