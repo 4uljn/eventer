@@ -13,11 +13,11 @@
         </p>
       </div>
       <div class="col-sm-12 col-md-3 my-5" id="link">
-        <router-link :to="'/about/'">
+        <router-link :to="'/about'">
           <p>Eventi</p>
         </router-link>
 
-        <router-link :to="'/login/'">
+        <router-link :to="'/chiSiamo'">
           <p>Chi Siamo</p>
         </router-link>
       </div>
