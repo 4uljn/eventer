@@ -72,6 +72,9 @@ p {
   font-weight: 600;
   text-align: center;
 }
+h1 {
+  text-align: center;
+}
 
 img {
   max-width: 100%;
