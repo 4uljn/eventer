@@ -1,58 +1,58 @@
 <template>
   <div class="container mt-4">
     <div class="filter-buttons">
-      <select class="filter" v-model="selectedCity">
-        <option value="">Tutte le città</option>
-        <option v-for="city in uniqueCities" :key="city">{{ city }}</option>
-      </select>
-      <div class="filters">
 
+      <div class="filter d-flex align-items-center">
 
-        <!-- Mostra il componente DatePicker quando isDatePickerVisible è true -->
-
-        <div>
-          <VueDatePicker v-model="selectedDate" :enable-time-picker="false">
-            <template #trigger>
-              <button class="filter">
-                <span class="clickable-text" v-if="selectedDate">{{ formattedSelectedDate }} <i class="custom-close-icon"
-                    @click="clearDateFilter">x</i></span>
-                <span v-else>Data</span>
-              </button>
-            </template>
-          </VueDatePicker>
-        </div>
-        <div>
-          <!-- Pulsante "Prezzo" per mostrare/nascondere lo slider -->
-          <button class="filter" @click="togglePriceSlider">Prezzo</button>
-        </div>
-
-
-        <div v-if="isPriceSliderVisible">
-          <vue-slider v-model="priceRange" :min="minPrice" :max="maxPrice"></vue-slider>
-
-          <button @click="applyPriceFilter">Filtra per prezzo</button>
-        </div>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path clip-rule="evenodd"
+            d="M10.774 18.763c.262.283.48.509.634.664.194.196.393.385.592.576.199-.19.398-.38.592-.576a30.327 30.327 0 002.557-2.957c.7-.927 1.407-1.993 1.941-3.094.532-1.095.91-2.26.91-3.376a6 6 0 00-12 0c0 1.116.378 2.28.91 3.376.534 1.101 1.242 2.167 1.94 3.094.701.928 1.4 1.727 1.924 2.293zM12 8a2 2 0 100 4 2 2 0 000-4z"
+            stroke="currentColor" stroke-linecap="square"></path>
+        </svg>
+        <select v-model="selectedCity" class="primaryFilter">
+          <option value="" class="Dignus">Tutte le città</option>
+          <option v-for="city in uniqueCities" :key="city" class="primaryFilter">
+            <p class="Dignus">{{ city }}</p>
+          </option>
+        </select>
 
       </div>
 
+      <!-- Mostra il componente DatePicker quando isDatePickerVisible è true -->
 
+      <div>
+        <VueDatePicker v-model="selectedDate" :enable-time-picker="false">
+          <template #trigger>
+            <button class="filter d-flex align-items-center primaryFilter">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.5 5.5h-4v4m4-4h5m-5 0v-1m0 1v1m5-1h4v4m-4-4v-1m0 1v1m-9 3v9h13v-9m-13 0h13" stroke="#fff"
+                  stroke-linecap="square"></path>
+              </svg>
+              <div class="date-container">
+                <span class="clickable-text" v-if="selectedDate">{{ formattedSelectedDate }}</span>
+                <span class="custom-close-icon" @click="clearDateFilter" v-if="selectedDate">x</span>
+                <span class="Dignus" v-else>Data</span>
+              </div>
+            </button>
+          </template>
+        </VueDatePicker>
+      </div>
 
     </div>
 
     <div class="filters">
       <div class="scrolling-container">
-        <button class="filter" @click="filterByCategory(null)">
+        <button class="filter" @click="filterByCategory('gigs')">
           <div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-              class="bi bi-emoji-heart-eyes" viewBox="0 0 16 16">
-              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-              <path
-                d="M11.315 10.014a.5.5 0 0 1 .548.736A4.498 4.498 0 0 1 7.965 13a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .548-.736h.005l.017.005.067.015.252.055c.215.046.515.108.857.169.693.124 1.522.242 2.152.242.63 0 1.46-.118 2.152-.242a26.58 26.58 0 0 0 1.109-.224l.067-.015.017-.004.005-.002zM4.756 4.566c.763-1.424 4.02-.12.952 3.434-4.496-1.596-2.35-4.298-.952-3.434zm6.488 0c1.398-.864 3.544 1.838-.952 3.434-3.067-3.554.19-4.858.952-3.434z" />
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+              style="width: 24px; height: 24px;">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M9 5a4 4 0 00-3.16 6.453l5.613-5.613A3.983 3.983 0 009 5zm3.532.461a5 5 0 10-2.152 8.346l6.787 6.066a.5.5 0 00.687-.02l2-2a.5.5 0 00.019-.686l-6.066-6.787C13.933 9.942 14 9.479 14 9a4.984 4.984 0 00-1.464-3.536c-.002 0-.003-.002-.004-.003zm-.372 1.086L6.547 12.16a4 4 0 005.613-5.613zm1.224 4.86a5.024 5.024 0 01-1.977 1.977l6.074 5.428 1.331-1.331-5.428-6.074z"
+                fill="#fff"></path>
             </svg>
           </div>
-          Tutte le categorie
+          <p class="Dignus">Gigs</p>
         </button>
-        <button class="filter" @click="filterByCategory('gigs')">Gigs</button>
         <button class="filter" @click="filterByCategory('party')">
           <div>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +62,7 @@
                 fill="#fff"></path>
             </svg>
           </div>
-          Party
+          <p class="Dignus">Party</p>
         </button>
         <button class="filter" @click="filterByCategory('theatre')">
           <div>
@@ -72,8 +72,9 @@
                 d="M6.5 7a.5.5 0 000 1V7zm1 1a.5.5 0 000-1v1zm4-1a.5.5 0 000 1V7zm1 1a.5.5 0 000-1v1zm2 1.5H14h.5zm-10-6V3a.5.5 0 00-.5.5h.5zm10 0h.5a.5.5 0 00-.5-.5v.5zm-2.4 13.7a.5.5 0 00.8.599l-.8-.6zm2.4-.7v.5-.5zm1.605 1.306a.5.5 0 10.803-.596l-.803.596zM11.9 11.301a.5.5 0 00-.8-.6l.8.6zM9.5 12v-.5.5zm-1.605-1.306a.5.5 0 10-.803.596l.803-.596zM16.5 13a.5.5 0 000 1v-1zm1 1a.5.5 0 000-1v1zm-7.409 2.407a.5.5 0 10-.98.202l.98-.202zM14.5 20.5v.5-.5zm5-5h.5-.5zm0-6h.5a.5.5 0 00-.5-.5v.5zm-3-.5a.5.5 0 000 1V9zm-10-1h1V7h-1v1zm5 0h1V7h-1v1zM14 9.5a4.5 4.5 0 01-1.318 3.182l.707.707A5.5 5.5 0 0015 9.5h-1zm-1.318 3.182A4.5 4.5 0 019.5 14v1a5.5 5.5 0 003.89-1.61l-.708-.708zM9.5 14a4.5 4.5 0 01-3.182-1.318l-.707.707A5.5 5.5 0 009.5 15v-1zm-3.182-1.318A4.5 4.5 0 015 9.5H4a5.5 5.5 0 001.61 3.89l.708-.708zM5 9.5v-6H4v6h1zM4.5 4h10V3h-10v1zm9.5-.5v6h1v-6h-1zm-1.1 14.299c.187-.248.428-.45.706-.588l-.447-.895c-.417.208-.78.51-1.059.883l.8.6zm.706-.588c.277-.14.583-.211.894-.211v-1c-.465 0-.925.108-1.341.316l.447.895zM14.5 17c.312 0 .62.073.898.212l.45-.893c-.419-.21-.88-.32-1.348-.319v1zm.898.212c.279.14.52.344.707.594l.803-.596a2.996 2.996 0 00-1.06-.891l-.45.893zM11.1 10.701c-.187.248-.428.45-.706.588l.447.895c.417-.208.78-.51 1.059-.883l-.8-.6zm-.706.588c-.277.14-.583.211-.894.211v1c.465 0 .925-.108 1.341-.316l-.447-.894zM9.5 11.5c-.312 0-.62-.072-.898-.213l-.45.894c.419.21.88.32 1.348.319v-1zm-.898-.213a1.996 1.996 0 01-.707-.593l-.803.596c.28.376.642.68 1.06.891l.45-.893zM16.5 14h1v-1h-1v1zm-7.388 2.609a5.502 5.502 0 001.912 3.154l.632-.775a4.502 4.502 0 01-1.565-2.581l-.98.202zm1.912 3.154c.982.8 2.21 1.237 3.476 1.237v-1a4.502 4.502 0 01-2.844-1.012l-.632.775zM14.5 21a5.5 5.5 0 003.89-1.61l-.708-.708A4.5 4.5 0 0114.5 20v1zm3.89-1.61A5.5 5.5 0 0020 15.5h-1a4.5 4.5 0 01-1.318 3.182l.707.707zM20 15.5v-6h-1v6h1zM19.5 9h-3v1h3V9z"
                 fill="#fff"></path>
             </svg>
+            <p class="Dignus">Theatre</p>
           </div>
-          Theatre
+
         </button>
         <button class="filter" @click="filterByCategory('film')">
           <div>
@@ -84,18 +85,18 @@
                 fill="#fff"></path>
             </svg>
           </div>
-          Film
+          <p class="Dignus">Film</p>
         </button>
         <button class="filter" @click="filterByCategory('dj')">
           <div>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-              style="width: 24px; height: 24px">
+              style="width: 24px; height: 24px;">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M16 5.5a.5.5 0 01.5-.5h3a.5.5 0 01.5.5v2a.5.5 0 01-.5.5H19v7a.5.5 0 01-.146.354l-3 3a.5.5 0 01-.708-.708L18 14.793V8h-1.5a.5.5 0 01-.5-.5v-2zM19 7h-2V6h2v1zm-9 0a5 5 0 100 10 5 5 0 000-10zm-3.333.011a6 6 0 116.667 9.978A6 6 0 016.667 7.01zM10 11a1 1 0 100 2.001A1 1 0 0010 11zm-1.111-.663a2 2 0 112.222 3.325 2 2 0 01-2.222-3.325z"
-                fill="fff"></path>
+                fill="#fff"></path>
             </svg>
           </div>
-          DJ
+          <p class="Dignus">DJ</p>
         </button>
         <button class="filter" @click="filterByCategory('talk')">
           <div>
@@ -106,19 +107,20 @@
                 fill="#fff"></path>
             </svg>
           </div>
-          Talk
+          <p class="Dignus">Talk</p>
         </button>
-        <button class="filter" @click="filterByCategory('social')">
+        <button class="filter dignus" @click="filterByCategory('social')">
           <div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="fff" class="bi bi-chat-left"
-              viewBox="0 0 16 16">
-              <path
-                d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+              style="width: 24px; height: 24px;">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M4 5.5a.5.5 0 01.5-.5h10a.5.5 0 01.5.5v8a.5.5 0 01-.5.5h-3.857l-3.878 2.424A.5.5 0 016 16v-2H4.5a.5.5 0 01-.5-.5v-8zM5 6v7h1.5a.5.5 0 01.5.5v1.598l3.235-2.022A.5.5 0 0110.5 13H14V6H5zm11 2.5a.5.5 0 01.5-.5h3a.5.5 0 01.5.5v8a.5.5 0 01-.5.5H18v2a.5.5 0 01-.765.424L13.357 17H10.5a.5.5 0 010-1h3a.5.5 0 01.265.076L17 18.098V16.5a.5.5 0 01.5-.5H19V9h-2.5a.5.5 0 01-.5-.5z"
+                fill="#fff"></path>
             </svg>
           </div>
-          Social
+          <p class="Dignus"> Social</p>
         </button>
-        <button class="filter" @click="filterByCategory('art')">
+        <button class="filter dignus" @click="filterByCategory('art')">
           <div>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
               style="width: 24px; height: 24px">
@@ -133,20 +135,33 @@
                 stroke-linejoin="round"></path>
             </svg>
           </div>
-          Art
+          <p class="Dignus">Art</p>
+        </button>
+        <button class="filter dignus" @click="filterByCategory('workshop')">
+          <div>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+              style="width: 24px; height: 24px;">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M6.146 5.146A.5.5 0 016.5 5h2a.5.5 0 01.354.146l1 1a.5.5 0 010 .708L8.207 8.5l2.647 2.646a.5.5 0 01-.708.708L7.5 9.207l-1.646 1.647a.5.5 0 01-.708 0l-2-2a.5.5 0 010-.708l3-3zM6.707 6l-2.5 2.5L5.5 9.793l1.646-1.647L8.793 6.5l-.5-.5H6.707zm8.44-.854A.5.5 0 0115.5 5h2a.5.5 0 01.354.146l3 3a.5.5 0 010 .708l-2 2a.5.5 0 01-.708 0L16.5 9.207l-9.646 9.647a.5.5 0 01-.708-.708L15.793 8.5l-1.647-1.646a.5.5 0 010-.708l1-1zm.56.854l-.5.5 1.647 1.646L18.5 9.793 19.793 8.5l-2.5-2.5h-1.586zm-2.56 8.146a.5.5 0 01.707 0l4 4a.5.5 0 01-.708.708l-4-4a.5.5 0 010-.708z"
+                fill="#fff"></path>
+            </svg>
+          </div>
+          <p class="Dignus">workshop</p>
         </button>
         <button class="filter" @click="filterByCategory('workshop')">
-          <div></div>
-          workshop
-        </button>
-        <button class="filter" @click="filterByCategory('workshop')">
-          <div></div>
-          art signing
+          <div><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+              style="width: 24px; height: 24px;">
+              <path d="M13.5 19.5l-8-8v-6h6l8 8-6 6z" stroke="currentColor" stroke-linecap="square"></path>
+              <path d="M9 7.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3z" stroke="currentColor" stroke-linecap="square"></path>
+            </svg></div>
+          <p class="Dignus">artist signing</p>
         </button>
       </div>
     </div>
+    <div class="mt-4">
+      <p class="sequel" id="EventInCity">Eventi a <span id="selectedCity">{{ selectedCity }}</span></p>
+    </div>
 
-    <p>eventi in {{ selectedCity }}</p>
     <div class="row">
       <div class="col-6 col-md-4 col-lg-3 mt-4" v-for="event in filteredEvents" :key="event.id">
         <router-link :to="'/event/' + event.id">
@@ -154,10 +169,10 @@
           <div class="card">
             <img :src="event.image" class="card-img-top" alt="Event Image" />
             <div class="card-body">
-              <h5 class="card-title">{{ event.name }}</h5>
-              <p class="card-data">{{ event.date }}</p>
-              <p class="card-text">{{ event.at }}</p>
-              <p class="card-text">{{ event.price }} €</p>
+              <h5 class="card-title Dignus">{{ event.name }}</h5>
+              <p class="card-data  Dignus">{{ event.date }}</p>
+              <p class="card-text  Dignus">{{ event.at }}</p>
+              <p class="card-text  Dignus"> €{{ event.price }}</p>
             </div>
           </div>
         </router-link>
@@ -197,7 +212,7 @@ export default {
         const day = date.getDate();
         const month = date.getMonth() + 1; // I mesi in JavaScript partono da 0
         const year = date.getFullYear();
-        return `${day}/${month}/${year}`;
+        return `${month}/${day}/${year}`;
       }
       return "Data";
     },
@@ -207,21 +222,18 @@ export default {
     },
     filteredEvents() {
       return this.$store.state.events.filter((event) => {
-        const cityMatch =
-          this.selectedCity === "" || event.city === this.selectedCity;
-        const priceMatch =
-          !this.priceFilterClicked ||
-          ((this.priceRange[0] === this.minPrice ||
-            event.price >= this.priceRange[0]) &&
-            (this.priceRange[1] === this.maxPrice ||
-              event.price <= this.priceRange[1]));
-        const dateMatch =
-          !this.selectedDate ||
+        const cityMatch = this.selectedCity === "" || event.city === this.selectedCity;
+
+        const currentDate = new Date(); // Ottieni la data odierna
+        const eventDate = new Date(event.date); // Converti la data dell'evento in oggetto Date
+
+        const dateMatch = !this.selectedDate ||
           this.dateToString(this.selectedDate) === event.date;
+        const futureEvent = eventDate >= currentDate;
         const categoryMatch =
           !this.selectedCategory || event.category === this.selectedCategory;
 
-        return cityMatch && priceMatch && dateMatch && categoryMatch;
+        return cityMatch && dateMatch && futureEvent && categoryMatch;
       });
     },
   },
@@ -241,7 +253,7 @@ export default {
       this.isDatePickerVisible = true; // Mostra il DatePicker
     },
     dateToString(date) {
-      return date.toLocaleDateString("it-IT", {
+      return date.toLocaleDateString("en-EN", {
         year: "numeric",
         month: "2-digit",
         day: "2-digit",
@@ -254,23 +266,35 @@ export default {
       this.selectedCategory = category;
     },
   },
-  watch: {
-    priceRange: function (newPriceRange, oldPriceRange) {
-      // Esegui qualche azione quando il valore dello slider cambia
-      if (newPriceRange != oldPriceRange) { this.priceFilterClicked = false; console.log(this.priceFilterClicked) }
-
-
-
-      // Puoi inserire qui la logica per tracciare le variazioni del prezzo
-      // Ad esempio, puoi aggiornare un indicatore visuale del prezzo in base a newPriceRange.
-    }
-  },
-
-
 };
 </script>
 
 <style scoped>
+label {
+  background-color: rgb(71, 64, 64);
+  border: none;
+  border-radius: 10px;
+  margin: 5px;
+  width: 100px;
+  min-width: fit-content;
+  padding: 1%;
+  display: flex;
+}
+
+.filter:focus {
+  background-color: white;
+  color: black;
+}
+
+.filter:focus>div>svg>path {
+  fill: black;
+}
+
+.container {
+  color: white;
+  min-height: 100vh;
+}
+
 img {
   border-radius: 10px;
 }
@@ -290,9 +314,19 @@ img {
   color: white;
   border: none;
   border-radius: 10px;
-  padding: 1%;
   margin: 5px;
-  width: 100px;
+  min-width: 100px;
+  align-items: center;
+  padding: 0.5%;
+  min-height: 50px;
+  text-align: center;
+  font-size: 13px;
+}
+
+select {
+  background-color: rgb(71, 64, 64);
+  color: white;
+  border: none;
 }
 
 .scrolling-container {
@@ -306,7 +340,68 @@ img {
   /* Mostra i pulsanti come una serie orizzontale */
 }
 
+.primaryFilter {
+  text-transform: uppercase;
+
+}
+
 .filter-buttons {
   display: flex;
 }
-</style>
+
+@font-face {
+  font-family: Dignus;
+  src: url(../assets/fonts/Dignus/Dignus.ttf);
+}
+
+.Dignus {
+  font-family: Dignus;
+}
+
+@font-face {
+  font-family: SequelSans;
+  src: url(../assets/fonts/sequel-sans/SequelSansBookBody.otf);
+}
+
+.sequel {
+  font-family: SequelSans;
+}
+
+#EventInCity {
+  font-size: 30px;
+}
+
+#selectedCity {
+  color: white;
+  opacity: 60%;
+}
+
+.card-title {
+  font-size: 16px;
+}
+
+.card-body {
+  line-height: 5px;
+
+}
+
+.card-data {
+  font-size: 17px;
+}
+
+.card-text {
+  font-size: 16px;
+}
+
+.date-container {
+  display: flex;
+  align-items: center;
+}
+
+.custom-close-icon {
+  margin-left: 8px;
+  padding-right: 10px;
+  /* Aggiunge un margine tra la data e l'icona "x" */
+  cursor: pointer;
+  /* Cambia il cursore quando passi sopra l'icona */
+}</style>

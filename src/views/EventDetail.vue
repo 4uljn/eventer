@@ -1,5 +1,5 @@
 <template>
-  <div class="container mt-4">
+  <div class="container mt-5 mb-5">
     <div class="row">
       <!-- Colonna stretta (4 su 12) con immagine -->
       <div class="col-md-4">
@@ -10,26 +10,35 @@
 
       <!-- Colonna ampia (8 su 12) con dettagli dell'evento -->
       <div class="col-md-8">
-        <h1>{{ event.name }}</h1>
+        <h1 class="sequel">{{ event.name }}</h1>
 
         <div class="mb-3">
-          <p class="date">{{ event.date }}</p>
-          <p> <span> {{ event.city }}</span> <span> {{ event.category }}</span></p>
+          <p class="date sequel">{{ event.date }}</p>
+          <p> <span> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path clip-rule="evenodd"
+                  d="M10.774 18.763c.262.283.48.509.634.664.194.196.393.385.592.576.199-.19.398-.38.592-.576a30.327 30.327 0 002.557-2.957c.7-.927 1.407-1.993 1.941-3.094.532-1.095.91-2.26.91-3.376a6 6 0 00-12 0c0 1.116.378 2.28.91 3.376.534 1.101 1.242 2.167 1.94 3.094.701.928 1.4 1.727 1.924 2.293zM12 8a2 2 0 100 4 2 2 0 000-4z"
+                  stroke="currentColor" stroke-linecap="square"></path>
+              </svg> {{ event.city }}</span> <span> <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.5 19.5l-8-8v-6h6l8 8-6 6z" stroke="currentColor" stroke-linecap="square"></path>
+                <path d="M9 7.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3z" stroke="currentColor" stroke-linecap="square"></path>
+              </svg>{{ event.category }}</span></p>
         </div>
-        <div class="jumbotron">
+        <div class="jumbotron  jumbotron-sm  d-flex justify-content-between align-items-center">
           <div>
-            <h3>Prezzo:</h3>
-          <p>{{ event.price }}</p> 
+            <h3 class="sequel"> € {{ event.price }}</h3>
+
           </div>
-         <div class="addToCartContainer">
-          <button id="addToCartButton" @click="addToCartAndRedirect">Aggiungi al Carrello</button>
-         </div>
-          
+          <div class="addToCartContainer">
+            <button id="addToCartButton" @click="addToCartAndRedirect">Aggiungi al Carrello</button>
+          </div>
         </div>
+
+
         <div class="mb-3">
-          <label for="description"> About</label>
-          <p>{{ event.description }}</p>
-          <p> Questo è un evento {{ event.age }}</p>
+          <label class="about sequel" for="description"> About</label>
+          <p class="sequel">{{ event.description }}</p>
+          <p> Questo è un evento adatto a {{ event.age }}</p>
           <p> Presentato da {{ event.presentedBy }}</p>
         </div>
         <hr class="hr custom-hr">
@@ -105,12 +114,16 @@ export default {
       this.$router.push("/cart");
 
     },
-    // ... Il resto del tuo codice ...
+
   },
 };
 </script>
 
 <style scoped>
+h1 {
+  font-size: 60px;
+}
+
 .sticky {
   position: sticky;
   top: 20px;
@@ -128,12 +141,20 @@ export default {
 
 .container {
   color: white;
+  min-height: 100vh;
 }
 
 .jumbotron {
   background-color: rgb(52, 48, 48);
   display: flex;
+  border: 10%;
 }
+
+.jumbotron-sm {
+  padding: 20px;
+
+}
+
 
 .custom-hr {
   background-color: white
@@ -152,15 +173,36 @@ export default {
   /* Imposta il margine desiderato tra le immagini */
 }
 
-.addToCartContainer{
+.addToCartContainer {
   margin-left: 30%;
 }
 
-#addToCartButton{
+#addToCartButton {
   border: 1px solid yellow;
   border-radius: 10px;
   background-color: yellow;
   padding: 2%;
+}
+
+@font-face {
+  font-family: SequelSans;
+  src: url(../assets/fonts/sequel-sans/SequelSansBookBody.otf);
+}
+
+.sequel {
+  font-family: SequelSans;
+}
+
+@font-face {
+  font-family: Dignus;
+  src: url(../assets/fonts/Dignus/Dignus.ttf);
+}
+
+.Dignus {
+  font-family: Dignus;
+}
+.about{
+  font-size: 30px;
 }
 </style>
 

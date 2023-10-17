@@ -19,8 +19,8 @@
       </div>
     </div>
     <div class="row my-4">
-      <!--NON STA AL CENTRO-->
-      <div class="col-sm-12 col-md-5 justify-content-center">
+      
+      <div class="col-sm-12 col-md-5 justify-content-center bottoneCentrale">
         <router-link :to="'/about/'">
           <button type="button" class="btn btn-dark rounded-pill">
             SEE MORE
@@ -146,7 +146,9 @@
     display: none;
   }
 }
-
+.container{
+  color: black;
+}
 #hometext {
   font-size: 4rem;
   text-transform: uppercase;
@@ -161,8 +163,7 @@ p {
   text-align: center;
 }
 
-/* css per dare la giusta altezza in relazione alla grandezza al video youtube 
-https://stackoverflow.com/questions/60164596/how-to-embed-youtube-iframe-video-100-full-width*/
+
 #videoWrapper {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
@@ -194,5 +195,10 @@ img {
 video {
   max-width: 100%;
   border-radius: 1%;
+}
+.bottoneCentrale {
+  display:flex;
+  justify-content: center;
+  align-items:center;
 }
 </style>
