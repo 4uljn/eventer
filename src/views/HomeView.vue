@@ -19,7 +19,6 @@
       </div>
     </div>
     <div class="row my-4">
-      
       <div class="col-sm-12 col-md-5 justify-content-center bottoneCentrale">
         <router-link :to="'/about/'">
           <button type="button" class="btn btn-dark rounded-pill">
@@ -145,12 +144,14 @@
   hr {
     display: none;
   }
+  #hometext {
+    font-size: 4rem;
+  }
 }
-.container{
+.container {
   color: black;
 }
 #hometext {
-  font-size: 4rem;
   text-transform: uppercase;
   font-family: Neuehaas;
 }
@@ -162,7 +163,6 @@ p {
 #testoCentro {
   text-align: center;
 }
-
 
 #videoWrapper {
   position: relative;
@@ -197,8 +197,8 @@ video {
   border-radius: 1%;
 }
 .bottoneCentrale {
-  display:flex;
+  display: flex;
   justify-content: center;
-  align-items:center;
+  align-items: center;
 }
 </style>

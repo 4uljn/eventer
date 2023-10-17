@@ -9,10 +9,11 @@ import ChiSiamo from "../views/ChiSiamo.vue";
 
 const routes = [
   {
-    path: "/home",
+    path: "/",
     name: "home",
     component: HomeView,
   },
+
   {
     path: "/about",
     name: "about",

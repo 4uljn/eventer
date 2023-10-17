@@ -3,7 +3,7 @@
     <div class="row justify-content-between">
       <div class="col-sm-12 col-md-3 my-5">
         <h1>
-          <router-link to="/home" class="navbar-brand">Eventer</router-link>
+          <router-link to="/" class="navbar-brand">Eventer</router-link>
         </h1>
       </div>
       <div class="col-sm-12 col-md-3 my-5">

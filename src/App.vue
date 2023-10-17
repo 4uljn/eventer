@@ -5,7 +5,7 @@
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
           <h1>
-            <router-link to="/home" class="navbar-brand">Eventer</router-link>
+            <router-link to="/" class="navbar-brand">Eventer</router-link>
           </h1>
 
           <button
@@ -22,7 +22,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
               <li>
-                <router-link to="/home" class="nav-link">Home</router-link>
+                <router-link to="/" class="nav-link">Home</router-link>
               </li>
               <li class="nav-item">
                 <router-link to="/about" class="nav-link">Eventi</router-link>
